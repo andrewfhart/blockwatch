@@ -1,0 +1,25 @@
+{
+  "name": "datafluency-blockwatch",
+  "version": "0.0.0",
+  "description": "provides a front end to datafluency-blockwatch-api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andrewfhart/blockwatch.git"
+  },
+  "keywords": [
+    "bitcoin",
+    "blockchain",
+    "explorer",
+    "visualization"
+  ],
+  "author": "Andrew Hart <andrew@datafluency.com>",
+  "license": "Apache Software License Version 2.0",
+  "bugs": {
+    "url": "https://github.com/andrewfhart/blockwatch/issues"
+  },
+  "homepage": "https://github.com/andrewfhart/blockwatch"
+}
