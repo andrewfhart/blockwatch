@@ -38,8 +38,18 @@ module.exports = function (grunt) {
   // Build development environment
   grunt.registerTask('dev', [
     'concat',
+    'copy:index_dev',
+    'copy:assets',
+  ]);
+
+  // Build release environment
+  grunt.registerTask('release', [
+    'init-env',
+    'concat',
     'copy:index',
-    'copy:assets'
+    'copy:assets',
+    'cssmin',
+    'uglify'
   ]);
 
 };
