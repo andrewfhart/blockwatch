@@ -1,0 +1,168 @@
+html,
+body {
+  color: #373D42;
+  font-family: 'Ubuntu', sans-serif;
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  color: #373D42;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak],
+.ng-cloak, .x-ng-cloak,
+.ng-hide {
+  display: none !important;
+}
+
+/* Styling for the ngProgress itself */
+#ngProgress {
+  background-color: #326C90 !important;
+  box-shadow: none !important;
+  color: #373D42 !important;
+  height: 3px !important;
+  margin: 0;
+  opacity: 0;
+  padding: 0;
+  z-index: 99998;
+
+  /* Add CSS3 styles for transition smoothing */
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Styling for the ngProgress-container */
+#ngProgress-container {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  top: 63px;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+}
+
+
+/* Styling for the navigation bar */
+.navbar { 
+  min-height: 64px;
+}
+.navbar-default .navbar-toggle { 
+  border-color: #fff;
+  margin-top: 15px;
+}
+
+.navbar-default .navbar-toggle .icon-bar { background-color: #fff; }
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {background-color: #373D42;}
+
+.navbar-default {
+  background-color: #298DC4;
+  margin: 0;
+  border: 0;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #F4FBE8;
+  font-family: 'Ubuntu', sans-serif;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus {
+  background-color: #6C9032;
+  color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.active>a:hover {
+  background-color: #fff;
+}
+
+.navbar-form .form-group {
+  display: block;
+}
+
+.navbar-form {
+  margin-top: 15px;
+}
+
+.nav-tabs.nav-justified>li>a:hover {
+  cursor: pointer;
+}
+
+.blockwatch {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 34px;
+  font-style: italic;
+  font-weight: 700;
+  overflow: hidden;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #fffffe;
+}
+
+.navbar-default .navbar-brand {
+  color: #FFFFFF;
+  padding: 20px 15px;
+}
+
+.navbar-form .form-control {
+  background-color: #237CAD;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border: 0;
+  -webkit-box-shadow: 1px 1px 0px 0px rgba(255,255,255,0.41), inset 1px 1px 3px 0px rgba(0,0,0,0.10);
+  -moz-box-shadow:    1px 1px 0px 0px rgba(255,255,255,0.41), inset 1px 1px 3px 0px rgba(0,0,0,0.10);
+  box-shadow:         1px 1px 0px 0px rgba(255,255,255,0.41), inset 1px 1px 3px 0px rgba(0,0,0,0.10);
+}
+
+.navbar-nav>li>a {
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -51px;
+  /* Pad bottom by footer height */
+  padding: 0 0 75px;
+}
+
+.ellipsis {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#footer {
+  background-color: #3D3742;
+  color: #fff;
+  height: 51px;
+  overflow: hidden;
+}
+
+#footer a.blockwatch {
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+#footer a.blockwatch:hover {
+  color: #fffffe;
+}
+
+#footer a.blockwatch small { font-size: 11px; }
+.line-footer { border-top: 2px dashed #ccc; }
+
+#wrap > .container { padding: 70px 15px 0; }
+
+#footer > .container { padding: auto 15px; }
