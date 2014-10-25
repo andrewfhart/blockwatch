@@ -8,6 +8,7 @@
 module.exports = function (grunt) {
   grunt.config.set('clean', {
     all: [
+      'bower_components',
       'lib',
       'public'
     ]

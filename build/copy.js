@@ -24,13 +24,28 @@ module.exports = function (grunt) {
       }]
     },
 
+    index_dev: {
+      files: [{
+        dest: 'public',
+        cwd: 'src',
+        expand: true,
+        filter: 'isFile',
+        src: [
+          'index_dev.html'
+        ],
+        rename: function (dest, src) {
+          return dest + '/index.html'
+        }
+      }]
+    },
+
     assets: {
       files: [{
         dest: 'public',
         cwd: 'src',
         expand: true,
         src: [
-          'views'
+          'views/**/*.*'
         ]
       }]
     }

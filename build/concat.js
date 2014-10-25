@@ -21,24 +21,22 @@ module.exports = function (grunt) {
 
     angular: {
       src: [
-        'lib/angular/angular.min.js', 
-        'lib/angular-resource/angular-resource.min.js', 
-        'lib/angular-route/angular-route.min.js', 
-        'lib/angular-qrcode/qrcode.js', 
-        'lib/angular-animate/angular-animate.min.js', 
+        'lib/angular/angular.js', 
+        'lib/angular-resource/angular-resource.js', 
+        'lib/angular-route/angular-route.js',  
+        'lib/angular-animate/angular-animate.js', 
         'lib/angular-bootstrap/ui-bootstrap.js', 
         'lib/angular-bootstrap/ui-bootstrap-tpls.js', 
-        'lib/angular-ui-utils/ui-utils.min.js', 
-        'lib/ngprogress/build/ngProgress.min.js', 
-        'lib/angular-gettext/dist/angular-gettext.min.js', 
-        'lib/angular-moment/angular-moment.min.js'
+        'lib/angular-ui-utils/ui-utils.js', 
+        'lib/ngprogress/ngProgress.js', 
+        'lib/angular-moment/angular-moment.js',
       ],
-      dest: 'public/js/angular-all.js'
+      dest: 'public/js/angularjs-all.js'
     },
 
     css: {
       src: [
-        'lib/bootstrap/dist/css/bootstrap.min.css', 
+        'lib/bootstrap/bootstrap.css', 
         'src/css/**/*.css'
       ],
       dest: 'public/css/main.css'
@@ -60,7 +58,8 @@ module.exports = function (grunt) {
 
     vendors: {
       src: [ 
-        'lib/momentjs/min/moment.min.js'
+        'lib/moment/moment.js',
+        'lib/socket.io-client/socket.io.js'
       ],
       dest: 'public/js/vendors.js'
     },
