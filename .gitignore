@@ -1,0 +1,11 @@
+# Ignore files managed by bower
+lib
+
+# Ignore files managed by npm
+node_modules
+
+# Ignore the generated release directory
+public
+
+# Ignore miscellaneous temp files
+*~
