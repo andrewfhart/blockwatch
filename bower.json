@@ -1,0 +1,24 @@
+{
+  "name": "Blockwatch",
+  "version": "0.0.0",
+  "homepage": "https://github.com/andrewfhart/blockwatch",
+  "authors": [
+    "Andrew Hart <andrew@datafluency.com>"
+  ],
+  "description": "provides a front end to blockwatch-api, a cryptocurrency blockchain explorer\"",
+  "keywords": [
+    "bitcoin",
+    "blockchain",
+    "explorer",
+    "visualization"
+  ],
+  "license": "Apache Software License Version 2.0",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
