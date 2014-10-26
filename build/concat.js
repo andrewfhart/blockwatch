@@ -36,7 +36,8 @@ module.exports = function (grunt) {
 
     css: {
       src: [
-        'lib/bootstrap/bootstrap.css', 
+        'lib/bootstrap/bootstrap.css',
+        'lib/cal-heatmap/cal-heatmap.css',
         'src/css/**/*.css'
       ],
       dest: 'public/css/main.css'
@@ -58,6 +59,8 @@ module.exports = function (grunt) {
 
     vendors: {
       src: [ 
+        'lib/d3/d3.js',
+        'lib/cal-heatmap/cal-heatmap.js',
         'lib/moment/moment.js',
         'lib/socket.io-client/socket.io.js'
       ],
