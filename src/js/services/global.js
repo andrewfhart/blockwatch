@@ -4,6 +4,7 @@
 angular.module('blockwatch.system')
   .factory('Global',[
     function() {
+      return {};
     }
   ])
   .factory('Version',
