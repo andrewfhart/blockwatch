@@ -5,6 +5,7 @@ var BLOCKS_DISPLAYED = 5;
 
 angular.module('blockwatch.system').controller('IndexController',
   function($scope, Global, getSocket, Blocks) {
+
     $scope.global = Global;
 
 
@@ -13,10 +14,20 @@ angular.module('blockwatch.system').controller('IndexController',
         limit: BLOCKS_DISPLAYED
       }, function(res) {
         $scope.blocks = res.blocks;
-        $scope.blocksLength = res.lenght;
+        $scope.blocksLength = res.length;
       });
     };
 
+    var _initHeatmap = function () {
+      $scope.blockHeatMap = new CalHeatMap();
+      $scope.blockHeatMap.init({itemSelector: '#blockheatmap'});
+      console.log($scope);
+    }
+
+    /*
+     * DISABLE web sockets for now...
+     *
+     *
     var socket = getSocket($scope);
 
     var _startSocket = function() { 
@@ -36,6 +47,7 @@ angular.module('blockwatch.system').controller('IndexController',
     socket.on('connect', function() {
       _startSocket();
     });
+    */
 
     $scope.humanSince = function(time) {
       var m = moment.unix(time);
@@ -43,8 +55,9 @@ angular.module('blockwatch.system').controller('IndexController',
     };
 
     $scope.index = function() {
+      _initHeatmap();
       _getBlocks();
-      _startSocket();
+      //_startSocket();
     };
 
     $scope.txs = [];
