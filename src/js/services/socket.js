@@ -73,4 +73,5 @@ angular.module('blockwatch.socket').factory('getSocket',
       return scopedSocket;
     };
     */
+    return function($scope) {};
   });
