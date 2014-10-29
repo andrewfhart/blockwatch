@@ -20,7 +20,21 @@ angular.module('blockwatch.system').controller('IndexController',
 
     var _initHeatmap = function () {
       $scope.blockHeatMap = new CalHeatMap();
-      $scope.blockHeatMap.init({itemSelector: '#blockheatmap'});
+      $scope.blockHeatMap.init({
+        itemSelector: '#blockheatmap',
+        domain: "year",
+        domainGutter: 5,
+        domainMargin: [20, 0, 0, 0],
+        subDomain: "month",
+        colLimit: 4,
+        start: new Date(2009, 10, 1),
+        cellSize: 20,
+        cellPadding:5,
+        range: 5,
+        legend: [2, 4, 6, 8],
+        legendMargin: [0, 0, 0, 0],
+        legendVerticalPosition: top
+      });
       console.log($scope);
     }
 
